@@ -1,10 +1,14 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors';
 import indexRoute from '../routes/index';
 
 dotenv.config();
 
 const app = express();
+
+// Enable CORS
+app.use(cors());
 
 // Middleware to parse JSON
 app.use(express.json());
