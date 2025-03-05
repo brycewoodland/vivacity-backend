@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const cors_1 = __importDefault(require("cors"));
-const applicantRoute_1 = __importDefault(require("./routes/applicantRoute"));
+const applicantRoute_1 = __importDefault(require("../routes/applicantRoute"));
 const express_list_endpoints_1 = __importDefault(require("express-list-endpoints"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();

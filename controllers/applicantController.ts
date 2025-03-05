@@ -6,7 +6,7 @@ const getApplicantInformation = async(req: Request, res: Response) => {
         const result = await pool.query('SELECT * FROM personal_info');
         res.json(result.rows);
     } catch (err) {
-        console.error('Error querying the data.');
+        console.error('Error querying the data.', err);
         res.status(500).send('Server error.');
     }
 };
